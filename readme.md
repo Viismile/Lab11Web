@@ -198,3 +198,26 @@ Selesaikan programnya sesuai Langkah-langkah yang ada. Anda boleh melakukan impr
 
 ## Jawab/Hasil
 Saya telah menyelesaikan program diatas agar dapat berjalan dengan semestinya. Seperti membuat file <b>admin_header.php</b> dan <b>admin_footer.php</b> serta CSSnya.
+
+### Screenshot
+- Admin_header.php
+![Admin_Head](https://user-images.githubusercontent.com/56240078/122661690-30084200-d1b7-11eb-90ab-068d45718162.jpg)
+
+- Admin_footer.php
+![Admin_Footer](https://user-images.githubusercontent.com/56240078/122661689-2e3e7e80-d1b7-11eb-82c6-aec936cc57bf.jpg)
+
+- Sebagian style untuk bagian admin.
+![Admin_Style](https://user-images.githubusercontent.com/56240078/122661691-30a0d880-d1b7-11eb-9c9a-c1e27927df80.jpg)
+
+- Menambahkan artikel baru
+![Tambah_Artikel](https://user-images.githubusercontent.com/56240078/122661698-339bc900-d1b7-11eb-9183-2cd684a3ad8d.jpg)
+![Tambah_Artikel2](https://user-images.githubusercontent.com/56240078/122661699-34345f80-d1b7-11eb-8085-5037ec630901.jpg)
+
+- Menghapus artikel
+![Hapus_Artikel](https://user-images.githubusercontent.com/56240078/122661695-326a9c00-d1b7-11eb-857d-10969506acee.jpg)
+![Hapus_Artikel2](https://user-images.githubusercontent.com/56240078/122661697-33033280-d1b7-11eb-9384-ffdb646f1f91.jpg)
+
+- Mengedit artikel
+![Edit_Artikel](https://user-images.githubusercontent.com/56240078/122661692-31396f00-d1b7-11eb-8bac-ff079f39d152.jpg)
+![Edit_Artikel2](https://user-images.githubusercontent.com/56240078/122661694-31d20580-d1b7-11eb-954f-8e8a2074f838.jpg)
+
