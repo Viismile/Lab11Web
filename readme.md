@@ -221,3 +221,76 @@ Saya telah menyelesaikan program diatas agar dapat berjalan dengan semestinya. S
 ![Edit_Artikel](https://user-images.githubusercontent.com/56240078/122661692-31396f00-d1b7-11eb-8bac-ff079f39d152.jpg)
 ![Edit_Artikel2](https://user-images.githubusercontent.com/56240078/122661694-31d20580-d1b7-11eb-954f-8e8a2074f838.jpg)
 
+
+# Praktikum 13 - Pemrograman Web (Framework Lanjutan - Modul Login)
+
+```
+Rofi Ismail - 311910657
+TI.19.A.2
+```
+
+## Laporan Praktikum
+### Persiapan
+Pastikan MySQL server sudah berjalan dan buat sebuah tabel sebagai berikut:
+![SS1](https://user-images.githubusercontent.com/56240078/123243667-70e0bd80-d50d-11eb-82e7-46b403548715.jpg)
+
+### Langkah 1 - Membuat Model User
+Buat file baru pada direktori <b>app/Models</b> dengan nama <b>UserModel.php</b> untuk memproses data login.
+![SS2](https://user-images.githubusercontent.com/56240078/123243696-763e0800-d50d-11eb-8a10-1b2b12093b0c.jpg)
+
+### Langkah 2 - Membuat Controller User
+Buat Controller baru dengan nama <b>User.php</b> pada direktori <b>app/Controllers</b>. Kemudian tambahkan method <b>`index()`</b>untuk menampilkan daftar user, dan method <b>`login()`</b> untuk proses login.
+![SS3](https://user-images.githubusercontent.com/56240078/123243704-7807cb80-d50d-11eb-9b0a-b58d6be82815.jpg)
+
+### Langkah 3 - Membuat View Login
+Buat direktori baru dengan nama <b>user</b> pada direktori <b>app/views</b>, kemudian buat file baru dengan nama <b>login.php</b>.
+![SS4](https://user-images.githubusercontent.com/56240078/123243716-79d18f00-d50d-11eb-84f6-675984650546.jpg)
+
+### Langkah 4 - Membuat Database Seeder
+Untuk keperluan ujicoba modul login, kita perlu memasukkan data user dan password ke dalam database. Untuk itu buat database seeder untuk tabel user. Buka CLI, kemudian tulis perintah berikut:
+`php spark make:seeder UserSeeder`
+![SS5](https://user-images.githubusercontent.com/56240078/123243721-7b9b5280-d50d-11eb-93e2-fce83b0f6fff.jpg)</br>
+
+Buka file <b>UserSeeder.php</b> yang berada di lokasi direktori
+<b>/app/Database/Seeds/UserSeeder.php</b> kemudian isi dengan kode berikut:
+![SS6](https://user-images.githubusercontent.com/56240078/123243728-7d651600-d50d-11eb-93ae-c45eb2960f96.jpg)</br>
+
+Lalu buka CLI lagi dan ketik perintah berikut:
+`php spark db:seed UserSeeder`
+![SS7](https://user-images.githubusercontent.com/56240078/123243732-7dfdac80-d50d-11eb-969b-ed692c5505e9.jpg)</br>
+
+Kemudian lakukan uji coba login dengan mengakses url : http://localhost:8080/user/login
+![SS8](https://user-images.githubusercontent.com/56240078/123243736-7f2ed980-d50d-11eb-835a-73b6d9ab7846.jpg)
+
+### Langkah 5 - Menambah Auth Filter
+Buat file baru dengan nama <b>Auth.php</b> pada direktori <b>app/Filters</b> untuk memfilter halaman admin. 
+![SS9](https://user-images.githubusercontent.com/56240078/123243739-7fc77000-d50d-11eb-9c44-bba3af996ed1.jpg)</br>
+
+Kemudian buka file <b>app/Config/Filters.php</b> tambahkan kode berikut:
+![SS10](https://user-images.githubusercontent.com/56240078/123243748-80f89d00-d50d-11eb-85f3-b81b6e51c871.jpg)</br>
+
+Lalu buka file <b>app/Config/Routes.php</b> dan sesuaikan kodenya seperti ini.
+![SS11](https://user-images.githubusercontent.com/56240078/123243751-8229ca00-d50d-11eb-846c-a9819c711b86.jpg)</br>
+
+Maka ketika mengakses alamat http://localhost:8080/admin/artikel akan dibawa ke halaman login.
+![SS12](https://user-images.githubusercontent.com/56240078/123243760-835af700-d50d-11eb-9dfd-4158e25b047b.jpg)
+
+### Langkah 6 - Menambah Fungsi Logout
+Tambahkan method logout pada <b>Controller User</b> seperti berikut:
+![SS13](https://user-images.githubusercontent.com/56240078/123243764-8524ba80-d50d-11eb-93b1-847e8eea0de9.jpg)
+
+Maka ketika menekan logout akan kembali ke halaman login.
+![SS14](https://user-images.githubusercontent.com/56240078/123249008-bf448b00-d512-11eb-9d1a-940dcfa6c0e3.jpg)
+
+## Pertanyaan dan Tugas
+Selesaikan programnya sesuai Langkah-langkah yang ada. Anda boleh melakukan improvisasi.
+
+## Hasil/Jawab
+Saya telah menyelesaikan program diatas agar dapat berjalan dengan semestinya. Mulai dari login untuk ke halaman admin sampai logout serta cssnya.
+
+### Screenshot
+- Route untuk logout.
+![SSRoute](https://user-images.githubusercontent.com/56240078/123249955-bdc79280-d513-11eb-8a55-83f5289704ef.jpg)
+
+- Sebagian css untuk halaman login.
+![SSCSS](https://user-images.githubusercontent.com/56240078/123249952-bbfdcf00-d513-11eb-9298-c6e4f43363af.jpg)
