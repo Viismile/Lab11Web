@@ -290,7 +290,7 @@ Saya telah menyelesaikan program diatas agar dapat berjalan dengan semestinya. M
 
 ### Screenshot
 - Route untuk logout.
-![SSRoute](https://user-images.githubusercontent.com/56240078/123249955-bdc79280-d513-11eb-8a55-83f5289704ef.jpg)
+![SSRoute](https://user-images.githubusercontent.com/56240078/123290271-5291b680-d53b-11eb-934f-8755f5d969ec.jpg)
 
 - Sebagian css untuk halaman login.
 ![SSCSS](https://user-images.githubusercontent.com/56240078/123249952-bbfdcf00-d513-11eb-9298-c6e4f43363af.jpg)
