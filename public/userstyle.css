@@ -11,6 +11,9 @@ body {
 
 #login-wrapper {
     align-items: center;
+    background-image: url(R.png);
+    background-position: center;
+    background-size: 85%;
     width: 500px;
     margin: 10px;
     margin-left: 30%;
@@ -31,6 +34,11 @@ h1{
     box-sizing: border-box;
     font-size: 15px;
     margin-bottom: 15px;
+}
+
+.form-label{
+    color: black;
+    font-size: 18px;
 }
 
 button[type=submit]{
