@@ -253,14 +253,14 @@ Untuk keperluan ujicoba modul login, kita perlu memasukkan data user dan passwor
 
 Buka file <b>UserSeeder.php</b> yang berada di lokasi direktori
 <b>/app/Database/Seeds/UserSeeder.php</b> kemudian isi dengan kode berikut:
-![SS6](https://user-images.githubusercontent.com/56240078/123243728-7d651600-d50d-11eb-93ae-c45eb2960f96.jpg)</br>
+![SS6](https://user-images.githubusercontent.com/56240078/123512194-41b68180-d6b0-11eb-9c8c-bf1b5096b90b.jpg)</br>
 
 Lalu buka CLI lagi dan ketik perintah berikut:
 `php spark db:seed UserSeeder`
 ![SS7](https://user-images.githubusercontent.com/56240078/123243732-7dfdac80-d50d-11eb-969b-ed692c5505e9.jpg)</br>
 
 Kemudian lakukan uji coba login dengan mengakses url : http://localhost:8080/user/login
-![SS8](https://user-images.githubusercontent.com/56240078/123243736-7f2ed980-d50d-11eb-835a-73b6d9ab7846.jpg)
+![SS8](https://user-images.githubusercontent.com/56240078/123512187-3f542780-d6b0-11eb-874c-eba51175d90b.jpg)
 
 ### Langkah 5 - Menambah Auth Filter
 Buat file baru dengan nama <b>Auth.php</b> pada direktori <b>app/Filters</b> untuk memfilter halaman admin. 
@@ -273,14 +273,14 @@ Lalu buka file <b>app/Config/Routes.php</b> dan sesuaikan kodenya seperti ini.
 ![SS11](https://user-images.githubusercontent.com/56240078/123243751-8229ca00-d50d-11eb-846c-a9819c711b86.jpg)</br>
 
 Maka ketika mengakses alamat http://localhost:8080/admin/artikel akan dibawa ke halaman login.
-![SS12](https://user-images.githubusercontent.com/56240078/123243760-835af700-d50d-11eb-9dfd-4158e25b047b.jpg)
+![SS12](https://user-images.githubusercontent.com/56240078/123512191-411deb00-d6b0-11eb-80a0-79db6bb5c093.jpg)
 
 ### Langkah 6 - Menambah Fungsi Logout
 Tambahkan method logout pada <b>Controller User</b> seperti berikut:
 ![SS13](https://user-images.githubusercontent.com/56240078/123243764-8524ba80-d50d-11eb-93b1-847e8eea0de9.jpg)
 
-Maka ketika menekan logout akan kembali ke halaman login.
-![SS14](https://user-images.githubusercontent.com/56240078/123249008-bf448b00-d512-11eb-9d1a-940dcfa6c0e3.jpg)
+Maka ketika menekan logout dan konfirmasi, akan kembali ke halaman login.
+![SS14](https://user-images.githubusercontent.com/56240078/123512515-146ad300-d6b2-11eb-820e-6970934b6008.jpg)
 
 ## Pertanyaan dan Tugas
 Selesaikan programnya sesuai Langkah-langkah yang ada. Anda boleh melakukan improvisasi.
@@ -290,7 +290,7 @@ Saya telah menyelesaikan program diatas agar dapat berjalan dengan semestinya. M
 
 ### Screenshot
 - Route untuk logout.
-![SSRoute](https://user-images.githubusercontent.com/56240078/123290271-5291b680-d53b-11eb-934f-8755f5d969ec.jpg)
+![SSRoute](https://user-images.githubusercontent.com/56240078/123512193-41b68180-d6b0-11eb-8b1e-b32c268bbae5.jpg)
 
 - Sebagian css untuk halaman login.
 ![SSCSS](https://user-images.githubusercontent.com/56240078/123249952-bbfdcf00-d513-11eb-9298-c6e4f43363af.jpg)
