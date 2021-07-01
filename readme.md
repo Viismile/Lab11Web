@@ -341,3 +341,10 @@ Kemudian lakukan percobaan membuat artikel dengan mengupload sebuah gambar.
 
 Berikut tampilan artikel yang dibuat dengan upload gambar.
 ![SS10](https://user-images.githubusercontent.com/56240078/124086184-008ceb80-da7b-11eb-97bd-04270090b19d.jpg)
+
+```
+NAMA  : Rofi Ismail
+NIM   : 311910657
+KELAS : TI.19.A.2
+Universitas Pelita Bangsa
+```
