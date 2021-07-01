@@ -294,3 +294,50 @@ Saya telah menyelesaikan program diatas agar dapat berjalan dengan semestinya. M
 
 - Sebagian css untuk halaman login.
 ![SSCSS](https://user-images.githubusercontent.com/56240078/123249952-bbfdcf00-d513-11eb-9298-c6e4f43363af.jpg)
+
+
+# Praktikum 14 - Pemrograman Web (Pagination dan Pencarian)
+
+```
+Rofi Ismail - 311910657
+TI.19.A.2
+```
+
+## Laporan Praktikum
+### Langkah 1 - Membuat Pagination
+Pagination digunakan untuk membatasi tampilan data pada sebuah halaman menjadi beberapa halaman tergantung banyaknya data yang akan ditampilkan.</br>
+Untuk membuat pagination Codeigniter 4, buka kembali <b>Controller Artikel</b>, kemudian modifikasi kode pada method <b>admin_index</b> seperti berikut.
+![SS1](https://user-images.githubusercontent.com/56240078/124086141-f834b080-da7a-11eb-8771-d3138fa195ae.jpg)
+
+Kemudian buka file <b>views/artikel/admin_index.php</b> dan tambahkan kode berikut dibawah deklarasi tabel data.
+![SS2](https://user-images.githubusercontent.com/56240078/124086149-f9fe7400-da7a-11eb-8d6a-d14e458cd0db.jpg)
+
+Buka menu daftar artikel untuk melihat hasilnya. Disini saya membatasi hanya 5 data saja yang ditampilkan perhalamannya.
+![SS3](https://user-images.githubusercontent.com/56240078/124086154-fa970a80-da7a-11eb-8d86-6e47dd359539.jpg)
+
+### Langkah 2 - Membuat Pencarian
+Pencarian data digunakan untuk memfilter data.</br>
+Untuk membuat pencarian data, buka kembali <b>Controller Artikel</b>, pada method <b>admin_index</b> ubah kodenya menjadi seperti berikut.
+![SS4](https://user-images.githubusercontent.com/56240078/124086159-fb2fa100-da7a-11eb-9547-9ed5f1ac3941.jpg)
+
+Kemudian buka kembali file <b>views/artikel/admin_index.php</b> dan tambahkan form pencarian sebelum deklarasi tabel seperti ini.
+![SS5](https://user-images.githubusercontent.com/56240078/124086162-fbc83780-da7a-11eb-99c1-5b007d251b38.jpg)
+Dan ubah link pager menjadi `<?= $pager->only(['q'])->links(); ?>`.
+
+Selanjutnya buka kembali halaman admin artikel dan masukkan kata kunci tertentu pada form pencarian.
+![SS6](https://user-images.githubusercontent.com/56240078/124086165-fc60ce00-da7a-11eb-9586-afc1785feb5f.jpg)
+
+### Langkah 3 - Membuat Upload Gambar
+Menambahkan fungsi unggah gambar pada tambah artikel.</br>
+Buka kembali <b>Controller Artikel</b>, sesuaikan kode pada method <b>add</b> seperti berikut.
+![SS7](https://user-images.githubusercontent.com/56240078/124086169-fd91fb00-da7a-11eb-8683-73d2cdaf16de.jpg)
+
+Kemudian pada file <b>views/artikel/form_add.php</b> tambahkan field input file serta sesuaikan tag form dengan menambahkan <i>ecrypt type</i> seperti berikut.</br>
+`<form action="" method="post" enctype="multipart/form-data">`
+![SS8](https://user-images.githubusercontent.com/56240078/124086172-fe2a9180-da7a-11eb-8238-fc1b4dea8965.jpg)
+
+Kemudian lakukan percobaan membuat artikel dengan mengupload sebuah gambar.
+![SS9](https://user-images.githubusercontent.com/56240078/124086178-ff5bbe80-da7a-11eb-920b-580e30905f3d.jpg)
+
+Berikut tampilan artikel yang dibuat dengan upload gambar.
+![SS10](https://user-images.githubusercontent.com/56240078/124086184-008ceb80-da7b-11eb-97bd-04270090b19d.jpg)
